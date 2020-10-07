@@ -18,6 +18,34 @@ namespace tercer_ejercicio
             int porcentarjeVotosJose = 0;
             int votosTotales = 0;
 
+            int ganadorPorcentaje1 = 0;
+            string ganadorPorcentajeStr1 = "";
+
+            int ganadorPorcentaje2 = 0;
+            string ganadorPorcentajeStr2 = "";
+
+            int[] totalPorcentajesArray = new int[5];
+
+            int ganadorPorcentaje = 0;
+            string ganadorPorcentajeStr = "";
+
+            totalPorcentajesArray[0] = porcentarjeVotosPedro;
+            totalPorcentajesArray[1] = porcentarjeVotosJose;
+            totalPorcentajesArray[2] = porcentarjeVotosCacerola;
+            totalPorcentajesArray[3] = porcentarjeVotosPablo;
+            totalPorcentajesArray[4] = porcentarjeVotosIguita;
+
+            int[] totalVotosArray = new int[5];
+
+            totalVotosArray[0] = totalVotosPedro;
+            totalVotosArray[1] = totalVotosJose;
+            totalVotosArray[2] = totalVotosCacerola;
+            totalVotosArray[3] = totalVotosPablo;
+            totalVotosArray[4] = totalVotosIguita;
+
+            int ganador = 0;
+            string ganadorStr = "";
+
             string[,] matrizVotaciones = new string[4, 6];
             string[] canditatosArray = new string[5];
 
@@ -167,16 +195,6 @@ namespace tercer_ejercicio
             Console.Write($"Pablp con -> {totalVotosPablo} votos es un {porcentarjeVotosPablo}%\n");
             Console.Write($"Iguita con -> {totalVotosIguita} votos es un {porcentarjeVotosIguita}%\n\n");
 
-            int[] totalVotosArray = new int[5];
-
-            totalVotosArray[0] = totalVotosPedro;
-            totalVotosArray[1] = totalVotosJose;
-            totalVotosArray[2] = totalVotosCacerola;
-            totalVotosArray[3] = totalVotosPablo;
-            totalVotosArray[4] = totalVotosIguita;
-
-            int ganador = 0;
-            string ganadorStr = "";
             for (int c = 0; c < totalVotosArray.Length; c++)
             {
                 if (totalVotosArray[c] > ganador)
@@ -188,17 +206,6 @@ namespace tercer_ejercicio
 
             Console.Write($"el candidato mas votado es {ganadorStr} con la cantindad de votos {ganador}\n");
 
-            int[] totalPorcentajesArray = new int[5];
-
-            int ganadorPorcentaje = 0;
-            string ganadorPorcentajeStr = "";
-
-            totalPorcentajesArray[0] = porcentarjeVotosPedro;
-            totalPorcentajesArray[1] = porcentarjeVotosJose;
-            totalPorcentajesArray[2] = porcentarjeVotosCacerola;
-            totalPorcentajesArray[3] = porcentarjeVotosPablo;
-            totalPorcentajesArray[4] = porcentarjeVotosIguita;
-
             for (int c = 0; c < totalPorcentajesArray.Length; c++)
             {
                 if (totalPorcentajesArray[c] > 50)
@@ -208,11 +215,6 @@ namespace tercer_ejercicio
                 }
             }
 
-            int ganadorPorcentaje1 = 0;
-            string ganadorPorcentajeStr1 = "";
-
-            int ganadorPorcentaje2 = 0;
-            string ganadorPorcentajeStr2 = "";
 
             if (ganadorPorcentaje > 0){
                 Console.Write($"el ganador es {ganadorPorcentajeStr} con el porcentaje de votos {ganadorPorcentaje}\n\n");
