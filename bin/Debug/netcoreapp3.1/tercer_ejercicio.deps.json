@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "tercer_ejercicio/1.0.0": {
+        "runtime": {
+          "tercer_ejercicio.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "tercer_ejercicio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
